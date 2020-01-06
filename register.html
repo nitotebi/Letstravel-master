@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title >Web du lịch</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="formbg">
+	<div class="full-container">
+		<p class="heading" style="color: white"><a href="home.php" style="text-decoration: none;color: white;">Du lịch</a></p>
+		<div class="center-container">
+			<div class="formWindow" id="userRegisterWindow">
+				<form action="register.php" method="post">
+					<p class="label"><span>Họ</span> <input class="userFormInput" type="text" name="userFirstName" placeholder="Nhập họ" id="fname" onblur="return checkname(this);" required><span id="fn"></span></p>
+					<p class="label"><span>Tên</span> <input class="userFormInput" type="text" name="userLastName" placeholder="Nhập tên" id="lname" onblur="return checkname(this);" required><span id="ln"></span></p>
+					<p class="label"><span>Email</span> <input  class="userFormInput" type="email" name="userEmail" placeholder="Nhập email" id="email" onblur="return checkmail();" required><span id="eid"></span></p>
+					<p class="label"><span>Số điện thoại</span><input class="userFormInput" type="text" name="userContact" placeholder="Nhập số điện thoại" id="mob" onblur="return checkmob();" required><span id="mobile"></span></p>
+					<p class="label"><span>Mật khẩu</span> <input class="userFormInput" type="password" name="userPasswd" placeholder="Nhập mật khẩu" id="pw" required></p>
+					<p class="label"><span>Nhập lại mật khẩu</span><input class="userFormInput" type="password" name="userPasswdConf" placeholder="Nhập lại mật khẩu" id="cpw" onblur="return checkpwd();" required><span id="cpwd"></span></p>
+					<p><input type="submit" name="register" class="yellowBtn" value="Đăng ký"></p>
+					<p class="formText">Ấn vào đây để<a href=userlogin.html style="text-decoration: none; color: #ffc312;">Đăng nhập</a></p>
+				</form>	
+			</div>
+		</div>		
+	</div>
+	
+</body>
+<script type="text/javascript" src="js/validation.js"></script>
+</html>
