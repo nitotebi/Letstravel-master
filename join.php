@@ -157,6 +157,8 @@ if($_SESSION['status']=='loggedin')
             {                              
           		echo "<option value='".$row5['City']."'>".$row5['City']."</option>";
           	}
+
+            
           ?>
 
 
@@ -270,7 +272,7 @@ function tablerows(){
     firstname.innerHTML="<input type='text' name='fname"+i+"'>";
     lastname.innerHTML="<input type='text' name='lname"+i+"'>";
     age.innerHTML = "<input type='number' name='age"+i+"' min='1'>";
-    gender.innerHTML = "<select name='gender"+i+"'><option>Chọn</option><option>Nam</option><option>Nữ</option></select>";
+    gender.innerHTML = "<select name='gender"+i+"'><option>Nam</option><option>Nữ</option></select>";
     contact.innerHTML = "<input type='text' name='contact"+i+"' maxlength='10' pattern='([0-9]{10})'>";
     aadhar.innerHTML = "<input type='text' maxlength='16' name='aadharno"+i+"' pattern='([0-9]{16})'>";
     deleteRow.innerHTML = "<button onclick='delRow(this)' class='delBtn'><i class='fa fa-trash' aria-hidden='true'></i></button>";
